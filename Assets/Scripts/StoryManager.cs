@@ -184,7 +184,7 @@ public class StoryManager : MonoBehaviour {
                 break;
             case 16:
                 droneSpawner.gameObject.SetActive(false);
-                SetTimer(15);
+                SetTimer(7);
                 break;
             case 17:
                 playerAttack.canAttack = false;

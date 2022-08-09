@@ -30,8 +30,13 @@ public class PlayerMovement : MonoBehaviour {
         if (canMove) {
             GetKeyboardInput();
             GetMouseInput();
-            Move();
             Rotate();
+        }
+    }
+
+    private void FixedUpdate() {
+        if (canMove) {
+            Move();
         }
     }
 
